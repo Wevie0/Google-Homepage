@@ -2,6 +2,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 120px;
     padding: 20px;
     width: 15%;
 }
@@ -24,14 +25,57 @@
 
 #search-bar {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin: 20px auto 20px auto;
+    width: 33%;
+    border-radius: 25px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 10px;
+    border-style: solid;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background: url(search.png) no-repeat scroll 7px 7px;
+    padding-left: 40px;
+}
+
+#search-bar:hover {
+    box-shadow: 1px 1px 1px 1px lightgray;
 }
 
 #buttons {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
+    
+}
+
+#search-button {
+    margin-right: 10px;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(95, 99, 104);
+    background-color: rgb(242, 242, 242);
+
+}
+
+#lucky-button {
+    margin-left: 10px;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(95, 99, 104);
+    background-color: rgb(242, 242, 242);
+}
+
+#search-button:hover, #lucky-button:hover {
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    color: rgb(34, 34, 34);
+    background-color: rgb(248, 248, 248);
 }
 
 #header {
@@ -48,15 +92,17 @@
     left: 0;
     right: 0;
     background-color: rgba(242, 242, 242, 255);
-    padding: 20px 30px 30px 20px;
+    padding: 10px 30px 10px 30px;
     font-size: 14px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
 }
 
 .header-link, .footer-link{
     color: #222;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-
     margin-left: 10px;
     margin-right: 10px;
 }
